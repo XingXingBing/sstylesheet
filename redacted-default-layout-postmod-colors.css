@@ -13,7 +13,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000 url('/static/styles/postmod/images/wood.jpg') fixed;
+  background: #000 url('/static/styles/postmod/images/wood.jpg') fixed !important;
+  background-size: cover !important;
   color: #333;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.1);
   font: 13px 'Roboto', 'Trebuchet MS', "Arial", sans-serif;
@@ -670,4 +671,38 @@ select:hover {
   #footer {
     width: 100%;
   }
+}
+
+/* FIX: Force background and logo visibility */
+body {
+  background: #000 url('/static/styles/postmod/images/wood.jpg') fixed !important;
+  background-size: cover !important;
+}
+
+#logo a {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* FIX: Text contrast improvements */
+#menu a, #userinfo_username li, #userinfo_major li, #userinfo_stats {
+  color: #ddd !important;
+}
+
+#menu li a:hover {
+  color: #fff !important;
+}
+
+/* Better contrast for section headers */
+.head, .colhead td, .colhead th, .colhead_dark td, tr.colhead {
+  color: #ddd !important;
+}
+
+/* Search bar text */
+#searchbars input {
+  color: #fff !important;
+}
+
+#searchbars input::placeholder {
+  color: #999 !important;
 }
