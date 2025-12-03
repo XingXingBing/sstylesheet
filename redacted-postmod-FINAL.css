@@ -1,0 +1,308 @@
+/*
+ * Redacted - Postmod Colors for New Default Theme
+ * This properly layers postmod colors ON TOP of the default theme
+ * Uses redacted's existing postmod wood background
+ */
+
+/* ===== BACKGROUND ===== */
+body {
+    background: #000 url('/static/styles/postmod/images/wood.jpg') no-repeat fixed !important;
+    background-size: cover !important;
+}
+
+/* ===== CONTENT AREA - Semi-transparent cream overlay ===== */
+#content {
+    background: rgba(247, 246, 242, 0.95) !important;
+}
+
+/* ===== LINKS - Postmod cyan/blue ===== */
+/* Main links (header, footer, etc) */
+a {
+    color: #4FD1FF !important;
+}
+
+/* Content area links */
+.main_column a,
+.sidebar a,
+.box a,
+table tbody a,
+.torrent_table a,
+.collage_table a,
+.request_table a {
+    color: #0A84AF !important;
+}
+
+.main_column a:hover,
+.sidebar a:hover,
+.box a:hover,
+table tbody a:hover {
+    color: #0C9CCF !important;
+}
+
+/* ===== BOXES - Postmod cream/beige ===== */
+.box,
+.sidebar .box,
+.vertical_space.box,
+#artist_information,
+#similar_artist_map,
+#torrents .torrent_description,
+.forum_post,
+#artist .edit_form,
+#collage .create_form,
+#edit_collage,
+#filter_form,
+#friends .friends_table,
+#inbox #searchbox,
+#questions .box2,
+#reportform,
+#reports .box,
+#staff .box,
+#upload #content > div,
+#user .edit_form:not(#userform),
+.inbox_message,
+.users_reports_table {
+    background-color: #F7F6F2 !important;
+}
+
+/* ===== TEXT COLORS IN LIGHT BOXES ===== */
+.box,
+.main_column,
+.sidebar,
+.thin,
+.pad,
+table tbody,
+#threadpoll,
+#poll,
+.forum_post td.body {
+    color: #444 !important;
+}
+
+/* Table cells */
+td, th {
+    color: #444 !important;
+}
+
+/* ===== TABLE BACKGROUNDS ===== */
+/* Base table background */
+table {
+    background-color: #fbfaf8 !important;
+}
+
+tr {
+    background-color: #fbfaf8 !important;
+}
+
+/* Alternating rows */
+tr.rowa,
+.torrent_table .rowa,
+.collage_table .rowa,
+.request_table .rowa {
+    background-color: #F0F0F0 !important;
+}
+
+tr.rowb,
+.torrent_table .rowb,
+.collage_table .rowb,
+.request_table .rowb {
+    background-color: #FFFFFF !important;
+}
+
+/* ===== TORRENT TABLE ===== */
+.torrent_table tr.group {
+    background-color: #EFEFEF !important;
+}
+
+.torrent_table tr.group_torrent {
+    background-color: #fbfaf8 !important;
+}
+
+.torrent_table tr.edition {
+    background: #F0F0F0 !important;
+}
+
+/* ===== TABLE HEADERS - Keep default's style but with postmod colors ===== */
+.colhead,
+.colhead_dark,
+.head,
+.forum_post .colhead_dark td,
+.torrent_table tr.colhead td,
+.torrent_table tr.colhead_dark td {
+    background: #000 !important;
+    color: #FBFCFD !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.colhead a,
+.colhead_dark a,
+.head a,
+.inbox_message .head a,
+.vertical_space.box .head a {
+    color: #FBFCFD !important;
+}
+
+/* ===== FORM INPUTS - Dark postmod style ===== */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+textarea,
+select {
+    background: #111 !important;
+    color: #fff !important;
+    border: 1px solid #777 !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+    background: #000 !important;
+    color: #FFF !important;
+    border: 1px solid #EEE !important;
+}
+
+/* ===== BUTTONS - Dark postmod style ===== */
+button,
+input[type="button"],
+input[type="submit"] {
+    background: #111 !important;
+    color: #fff !important;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+/* ===== HEADER - Keep text white for visibility ===== */
+#userinfo,
+#userinfo a,
+#userinfo_stats li span,
+#alerts,
+#alerts a {
+    color: #fff !important;
+}
+
+/* ===== SEARCH BARS ===== */
+#searchbars input {
+    background: rgba(247, 246, 242, 0.2) !important;
+    color: #FFF !important;
+    border: 1px solid #FFF !important;
+}
+
+#searchbars input:focus {
+    background: rgba(247, 246, 242, 0.3) !important;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4 {
+    color: #DFDFDF !important;
+}
+
+/* Headings inside light boxes */
+.box h1,
+.box h2,
+.box h3,
+.box h4,
+.forum_post h3 {
+    color: #000 !important;
+}
+
+/* ===== TAGS - Postmod olive green ===== */
+.tags,
+.tags a {
+    color: #8d957e !important;
+}
+
+.tags a:hover {
+    color: #444 !important;
+}
+
+/* ===== FORUM POSTS ===== */
+table.forum_post {
+    background-color: #F7F6F2 !important;
+}
+
+blockquote {
+    background: #ECECEC !important;
+    border: 1px dashed #666 !important;
+}
+
+.quoteheader,
+strong.quoteheader {
+    color: #444 !important;
+}
+
+/* ===== SPECIAL MESSAGES ===== */
+.error_message {
+    background-color: #AF2525 !important;
+    color: white !important;
+}
+
+.save_message {
+    background-color: #F4E649 !important;
+    color: #492802 !important;
+}
+
+/* ===== AUTOCOMPLETE ===== */
+.autocomplete-suggestions {
+    background: #111 !important;
+}
+
+.autocomplete-selected {
+    background: #444 !important;
+}
+
+/* ===== TOOLTIPS ===== */
+:root .tooltipster-box {
+    background-color: #ECECEC !important;
+}
+
+:root .tooltipster-content {
+    color: #444 !important;
+}
+
+:root .tooltipster-content a {
+    color: #0A84AF !important;
+}
+
+/* ===== CODE BLOCKS ===== */
+code {
+    background: #141414 !important;
+    color: #ddd !important;
+}
+
+pre[class*="language-"] {
+    background: hsl(0, 0%, 8%) !important;
+}
+
+/* ===== ROW HOVER STATES ===== */
+.torrent_table tr:not(.edition):not(.group):not(.colhead):not(.colhead_dark):hover td,
+.forum_list.border tr:not(.colhead):not(.colhead_dark):hover td {
+    background-color: #E8E8E8 !important;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+    color: #CCC !important;
+}
+
+/* ===== POLL BARS ===== */
+.center_poll {
+    background: linear-gradient(180deg, #c4a675, #b89a65) !important;
+}
+
+/* ===== IMPORTANT TEXT ===== */
+.important_text {
+    color: #e55 !important;
+}
+
+.important_text_alt {
+    color: #44d444 !important;
+}
