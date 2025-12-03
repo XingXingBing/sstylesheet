@@ -1,0 +1,340 @@
+/*
+ * Redacted - Default Layout with Postmod Colors
+ * This stylesheet applies postmod's warm color scheme to the new default theme
+ * 
+ * INSTALLATION:
+ * 1. Install Stylus browser extension (Chrome/Firefox)
+ * 2. Click Stylus icon → "Manage"
+ * 3. Click "Write new style"
+ * 4. Paste this CSS
+ * 5. Under "Applies to" → Add: URLs on the domain → redacted.ch (or your site domain)
+ * 6. Save
+ */
+
+/* ===== BACKGROUND & BODY ===== */
+body {
+    background: #000 url('https://i.imgur.com/your-wood-texture.jpg') no-repeat fixed !important;
+    background-size: cover !important;
+    color: #EEE !important;
+}
+
+/* Upload the wood.jpg to imgur or another host and replace the URL above */
+/* Or use a local file path if Stylus supports it on your setup */
+
+/* ===== CONTENT CONTAINER ===== */
+#content {
+    background: rgba(247, 246, 242, 0.95) !important;
+    color: #444 !important;
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #4FD1FF !important;
+}
+
+.main_column a,
+.sidebar a,
+.box a,
+table tbody a {
+    color: #0A84AF !important;
+}
+
+.main_column a:hover,
+.sidebar a:hover,
+.box a:hover,
+table tbody a:hover {
+    color: #0C9CCF !important;
+}
+
+/* ===== BOXES & SIDEBARS ===== */
+.box,
+.sidebar .box,
+.vertical_space.box {
+    background-color: #F7F6F2 !important;
+    color: #444 !important;
+}
+
+#artist_information,
+#similar_artist_map,
+#torrents .torrent_description {
+    background: #F7F6F2 !important;
+    color: #444 !important;
+}
+
+/* ===== TABLES ===== */
+table {
+    background-color: #fbfaf8 !important;
+}
+
+tr {
+    background-color: #fbfaf8 !important;
+}
+
+tr.rowa {
+    background-color: #F0F0F0 !important;
+}
+
+tr.rowb {
+    background-color: #FFFFFF !important;
+}
+
+#better table .rowa,
+#inbox #messageform table .rowa,
+#log_table .rowa,
+.collage_table .rowa,
+.request_table .rowa,
+.torrent_table .rowa,
+.users_reports_table .rowa {
+    background: #F0F0F0 !important;
+}
+
+#better table .rowb,
+#inbox #messageform table .rowb,
+#log_table .rowb,
+.collage_table .rowb,
+.request_table .rowb,
+.torrent_table .rowb,
+.users_reports_table .rowb {
+    background: #FFFFFF !important;
+}
+
+td, th {
+    color: #444 !important;
+}
+
+/* ===== TABLE HEADERS ===== */
+.colhead,
+.colhead_dark,
+.head,
+#better table tr.colhead td,
+#better table tr.colhead_dark td,
+.torrent_table tr.colhead td,
+.torrent_table tr.colhead_dark td,
+.forum_list.border tr.colhead td {
+    background: #000 !important;
+    color: #FBFCFD !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.colhead a,
+.colhead_dark a,
+.head a {
+    color: #FBFCFD !important;
+}
+
+.inbox_message .head,
+.vertical_space.box .head,
+table.forum_post .colhead_dark td {
+    background: #000 !important;
+    color: #FBFCFD !important;
+}
+
+/* ===== TORRENT TABLE SPECIFIC ===== */
+.torrent_table tr.group,
+.torrent_table tr.torrent {
+    background: #EFEFEF !important;
+}
+
+.torrent_table tr.group_torrent {
+    background-color: #fbfaf8 !important;
+}
+
+.torrent_table tr.edition {
+    background: #F0F0F0 !important;
+}
+
+tr.group_torrent td,
+tr.group td,
+tr.torrent td {
+    color: #646054 !important;
+}
+
+/* ===== FORM INPUTS ===== */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+textarea,
+select {
+    background: #111 !important;
+    color: #fff !important;
+    border: 1px solid #777 !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+    background: #000 !important;
+    color: #FFF !important;
+}
+
+/* ===== BUTTONS ===== */
+button,
+input[type="button"],
+input[type="submit"] {
+    background: #111 !important;
+    color: #fff !important;
+    border: 1px solid rgba(0,0,0,0.25) !important;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+/* ===== HEADER ===== */
+#userinfo,
+#userinfo a,
+#alerts,
+#alerts a {
+    color: #fff !important;
+}
+
+#searchbars input {
+    background: rgba(247, 246, 242, 0.2) !important;
+    color: #FFF !important;
+    border: 1px solid #FFF !important;
+}
+
+#searchbars input:focus,
+#searchbars input:active {
+    background: rgba(247, 246, 242, 0.3) !important;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3 {
+    color: #DFDFDF !important;
+}
+
+.box h1,
+.box h2,
+.box h3,
+.box h4 {
+    color: #000 !important;
+}
+
+/* ===== TAGS ===== */
+.tags a {
+    color: #8d957e !important;
+    background: rgba(0, 0, 0, 0.08) !important;
+}
+
+.tags a:hover {
+    color: #444 !important;
+    background: rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ===== FORUM POSTS ===== */
+table.forum_post {
+    background-color: #F7F6F2 !important;
+}
+
+table.forum_post td.body {
+    color: #444 !important;
+}
+
+blockquote {
+    background: #ECECEC !important;
+    border: 1px dashed #666 !important;
+}
+
+.quoteheader {
+    color: #444 !important;
+}
+
+/* ===== SPECIAL ELEMENTS ===== */
+.error_message {
+    background-color: #AF2525 !important;
+    color: white !important;
+}
+
+.save_message {
+    background-color: #F4E649 !important;
+    color: #492802 !important;
+}
+
+/* ===== AUTOCOMPLETE ===== */
+.autocomplete-suggestions {
+    background: #111 !important;
+}
+
+.autocomplete-selected {
+    background: #444 !important;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+    color: #CCC !important;
+}
+
+/* ===== POLLS ===== */
+.center_poll {
+    background: linear-gradient(180deg, #c4a675, #b89a65) !important;
+}
+
+/* ===== TOOLTIPS ===== */
+:root .tooltipster-box {
+    background-color: #ECECEC !important;
+}
+
+:root .tooltipster-content {
+    color: #444 !important;
+}
+
+:root .tooltipster-content a {
+    color: #0A84AF !important;
+}
+
+/* ===== CODE BLOCKS ===== */
+code {
+    background: #141414 !important;
+}
+
+pre[class*="language-"] {
+    background: hsl(0, 0%, 8%) !important;
+}
+
+/* ===== MISC OVERRIDES ===== */
+.thin {
+    color: #444 !important;
+}
+
+.pad {
+    color: #444 !important;
+}
+
+#threadpoll,
+#poll {
+    color: #444 !important;
+}
+
+/* ===== IMPORTANT TEXT COLORS ===== */
+.important_text {
+    color: #e55 !important;
+}
+
+.important_text_alt {
+    color: #44d444 !important;
+}
+
+/* Ensure row hover states work with new colors */
+#better table tr:not(.colhead):not(.colhead_dark):hover td,
+.forum_list.border tr:not(.colhead):not(.colhead_dark):hover td {
+    background-color: #E8E8E8 !important;
+}
+
+.torrent_table tr:not(.edition):not(.group):not(.colhead):not(.colhead_dark):not(.torrentdetails):hover td {
+    background: #E5E5E5 !important;
+}
+
+/* Fix for ratio/stats colors to remain visible */
+#userinfo_stats li span {
+    color: #FFF !important;
+}
