@@ -1,25 +1,22 @@
 /*
  * Redacted - Default Layout with Postmod Colors
- * This stylesheet applies postmod's warm color scheme to the new default theme
+ * Uses redacted's existing postmod background image - no external hosting needed!
  * 
  * INSTALLATION:
- * 1. Install Stylus browser extension (Chrome/Firefox)
- * 2. Click Stylus icon → "Manage"
- * 3. Click "Write new style"
- * 4. Paste this CSS
- * 5. Under "Applies to" → Add: URLs on the domain → redacted.ch (or your site domain)
- * 6. Save
+ * 1. Upload this CSS file to a hosting service (see guide below)
+ * 2. Go to redacted → Settings → Site Options
+ * 3. Find "External CSS" or "Custom Stylesheet URL"
+ * 4. Paste your CSS file's URL
+ * 5. Make sure your theme is set to "Default"
+ * 6. Save and refresh!
  */
 
 /* ===== BACKGROUND & BODY ===== */
 body {
-    background: #000 url('https://i.imgur.com/your-wood-texture.jpg') no-repeat fixed !important;
+    background: #000 url('/static/styles/postmod/images/wood.jpg') no-repeat fixed !important;
     background-size: cover !important;
     color: #EEE !important;
 }
-
-/* Upload the wood.jpg to imgur or another host and replace the URL above */
-/* Or use a local file path if Stylus supports it on your setup */
 
 /* ===== CONTENT CONTAINER ===== */
 #content {
