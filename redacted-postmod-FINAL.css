@@ -1,230 +1,108 @@
 /*
-  Postmod Colors + Default Layout for Redacted
-  Based on DarkMonoAlt structure
-  ----------------------------------------------
+  DEFAULT THEME + POSTMOD COLORS
+  Minimal override for Redacted
+  --------------------------------
+  Keeps default theme layout, changes only colors/background
 */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
+/* Wood background */
 body {
-  margin: 0;
-  padding: 0;
-  background: #000 url('/static/styles/postmod/images/wood.jpg') fixed;
-  color: #333;
-  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.1);
-  font: 13px 'Roboto', 'Trebuchet MS', "Arial", sans-serif;
+  background: #000 url('/static/styles/postmod/images/wood.jpg') fixed !important;
 }
 
-/* Links - Postmod cyan */
-a {
-  color: #4FD1FF;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #0A84AF;
-}
-
-/* Content areas - Postmod cream */
-.box, .pad, .torrent_table, .forum_post, .main_column > .box, .sidebar .box,
-.create_form .layout, .search_form, .message_table, .friends_table {
-  background-color: #F7F6F2;
-  color: #333;
-}
-
-/* Headers - Dark */
-.head, .colhead td, .colhead th, .colhead_dark td, tr.colhead {
-  background-image: linear-gradient(to bottom, #1d1d1d, #191919);
-  color: #888 !important;
-  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
-  font-weight: bold;
-  padding: 8px 10px !important;
-}
-
-/* Top bars */
-#extra1 {
-  position: absolute;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 45px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  background: #191919;
-}
-
-#extra2 {
-  position: absolute;
-  top: 0;
-  margin: 125px 0 0;
-  width: 100%;
-  height: 50px;
-  background-color: #2e2e2e;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Content container */
-#content {
-  overflow: hidden;
-  margin: 125px auto 50px !important;
-  width: 1050px;
-  line-height: 1.4em;
-}
-
-#content .main_column {
-  float: left;
-  width: 69%;
-  margin-left: 0.5%;
-}
-
-#content .sidebar {
-  float: right;
-  width: 27% !important;
-  margin-right: 2%;
-}
-
-/* Menu */
-#menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 45px;
-  text-align: right;
-  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
-  font-weight: normal;
-}
-
-#menu a {
-  color: #9A9A9A;
-}
-
-#menu .active a {
-  background-color: #1c1c1c;
-  color: #4FD1FF;
-}
-
-#menu li a {
-  padding: 13px 7px 15px;
-}
-
-/* User info */
-#userinfo_username {
-  position: static !important;
-  float: left !important;
-  margin: 62px 0 0 50px;
-  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
-}
-
-#userinfo_username a.username {
-  color: #4FD1FF;
-  font-weight: normal;
-  font-size: 13px;
-}
-
-/* Search bars */
-#searchbars {
-  position: absolute;
-  top: 125px;
-  margin: 0;
-  padding: 12px 5px;
-  width: 100%;
-  height: 28px;
-  text-align: center;
-}
-
-#searchbars input {
-  padding: 3px 10px;
-  width: 130px;
-  height: 19px;
-  border: 1px solid #3B3B3B;
-  background: rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  color: #666;
-}
-
-/* Tables */
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td {
-  padding: 7px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-tr:hover {
-  background-color: rgba(50, 50, 50, 0.1);
-}
-
-/* Torrent rows */
-tr.group, table#torrent_table > tbody > .torrent {
-  background: #F7F6F2;
-}
-
-tr.group .group_info a {
-  color: #0A84AF;
-  font-weight: bold;
-}
-
-tr.group_torrent {
-  font-size: 12px;
-  background: #F7F6F2;
-}
-
-/* Forms */
-input[type="text"], input[type="search"], input[type="password"], 
-input[type="email"], input[type="url"], textarea {
-  padding: 5px 10px;
-  border: 1px solid #3B3B3B;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-  color: #333;
-}
-
-input[type="submit"], input[type="button"], button[type="button"] {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid #3b3b3b;
-  background: linear-gradient(to bottom, #333333, #181818);
-  color: #8b8b8b;
-  text-shadow: 1px 1px 0px #333333;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-input:focus, textarea:focus {
-  outline: 0 !important;
-  border: 1px solid #4FD1FF !important;
-}
-
-/* Boxes with proper postmod styling */
-.box.pad, .torrent_table, .request_table, .forum_post, 
-.main_column > .box, .sidebar .box, .collage_table,
-.create_form .layout, .search_form, .message_table,
-.friends_table, .vote_matches_table {
-  margin-bottom: 15px !important;
-  padding: 10px !important;
+/* Content boxes - cream background */
+.box, .pad, .torrent_table, .forum_post, .main_column > .box, 
+.sidebar .box, .create_form .layout, .search_form, .message_table, 
+.friends_table, .collage_table, .request_table, .vote_matches_table,
+.layout.border, .forum_index, .forum_list, #reply_box, #searchforum,
+.rule_table, .staff, .edit_form .layout, .send_form .layout,
+.manage_form .layout, .artist_table, #inbox .box.pad, #compose,
+#torrents .box.pad, #upload .box.pad, #wiki .box.pad, #better .box.pad,
+#user .box.pad, #requests .box.pad, #collage .box.pad, #artist .box.pad,
+#staffpm .box.pad, #reports .box.pad, #reportsv2 .box.pad {
   background-color: #F7F6F2 !important;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   color: #333 !important;
 }
 
-/* Specific content area links */
-#content a {
-  color: #0A84AF;
+/* Box padding and spacing */
+.box.pad, .torrent_table, .forum_post, .create_form .layout,
+.search_form, .message_table, .friends_table {
+  padding: 10px !important;
+  margin-bottom: 15px !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-#content a:hover {
-  color: #4FD1FF;
+/* Links - cyan */
+a {
+  color: #4FD1FF !important;
+}
+
+a:hover, a:visited {
+  color: #0A84AF !important;
+}
+
+/* Content area links - darker cyan for better contrast on cream */
+#content a, .box a, .pad a, .torrent_table a, .forum_post a {
+  color: #0A84AF !important;
+}
+
+#content a:hover, .box a:hover, .pad a:hover {
+  color: #4FD1FF !important;
+}
+
+/* Headers - keep dark but ensure they're visible */
+.head, .colhead td, .colhead th, .colhead_dark td, tr.colhead {
+  background: linear-gradient(to bottom, #1d1d1d, #191919) !important;
+  color: #888 !important;
+}
+
+/* Text colors for readability on cream */
+.box, .pad, .torrent_table, .forum_post, td, th, p, li, div {
+  color: #333 !important;
+}
+
+/* Form inputs - light background for cream context */
+input[type="text"], input[type="search"], input[type="password"], 
+input[type="email"], input[type="url"], textarea, select {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #4FD1FF !important;
+}
+
+/* Search bars - keep default styling but ensure visibility */
+#searchbars input {
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: #fff !important;
+  border: 1px solid #555 !important;
+}
+
+/* Buttons */
+input[type="submit"], input[type="button"], button {
+  background: linear-gradient(to bottom, #333, #181818) !important;
+  color: #8b8b8b !important;
+  border: 1px solid #3b3b3b !important;
+}
+
+/* Top navigation - keep on wood */
+#menu a, #userinfo a {
+  color: #9A9A9A !important;
+}
+
+#menu .active a {
+  color: #4FD1FF !important;
+}
+
+/* Torrent rows */
+tr.group, tr.torrent {
+  background: #F7F6F2 !important;
+}
+
+tr:hover, tr.group:hover, tr.torrent:hover {
+  background-color: rgba(79, 209, 255, 0.1) !important;
 }
 
 /* Tags */
@@ -233,109 +111,58 @@ input:focus, textarea:focus {
 }
 
 /* Forum posts */
-.forum_post .avatar {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.05);
-  min-width: 120px;
+.forum_post .body {
+  background: #F7F6F2 !important;
+  color: #333 !important;
 }
 
-.forum_post .body {
-  padding: 15px;
-  line-height: 1.4em;
-  background: #F7F6F2;
+.forum_post .avatar {
+  background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
 /* Blockquotes */
 blockquote {
-  margin-top: 5px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  background-color: rgba(200, 200, 200, 0.2);
-  text-align: justify;
-}
-
-/* Logo */
-#logo a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  margin: 8px 0 0 50px;
-  padding: 0;
-  width: 113px;
-  height: 30px;
-  background-image: url('data:image/png;base64,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');
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: center center;
-}
-
-/* Headings */
-h1, h2, h3 {
+  background-color: rgba(200, 200, 200, 0.3) !important;
+  border: 1px solid #ddd !important;
   color: #333 !important;
-  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.1);
-  font-weight: bold;
 }
 
-h2 {
-  font-size: 24px;
-  line-height: 1.2em;
-  margin-bottom: 1em;
-}
-
-h3 {
-  font-size: 14px;
-  line-height: 1.2em;
-  margin-bottom: 1.1em;
-}
-
-/* Lists */
-ol, ul {
-  list-style-position: inside;
-}
-
-li {
-  line-height: 1.5em;
+/* Sidebar */
+.sidebar {
+  color: #333 !important;
 }
 
 /* Special states */
 .tl_free {
-  color: #A7A45B;
+  color: #A7A45B !important;
 }
 
 .tl_snatched {
-  color: #4fa442;
+  color: #4fa442 !important;
 }
 
-/* Images */
-img {
-  border: none;
-  max-width: 100%;
+/* Ensure text is readable everywhere */
+h1, h2, h3, h4, h5, h6 {
+  color: #333 !important;
 }
 
-/* Footer */
-#footer {
-  margin: 0 auto 50px;
-  width: 100%;
-  text-align: center;
-  color: #666;
+/* Group info links */
+.group_info a {
+  color: #0A84AF !important;
+  font-weight: bold;
 }
 
-/* Tooltips */
-.tooltipster-default {
-  background-color: rgba(45, 45, 45, 0.95);
-  border-color: rgba(0, 0, 0, 0.95);
-  border-width: 1px;
-  color: #9A9A9A;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+/* Navigation breadcrumbs */
+.breadcrumbs a {
+  color: #4FD1FF !important;
 }
 
-/* Responsive */
-@media only screen and (max-width: 1080px) {
-  #content {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
+/* Stats */
+.stats {
+  color: #333 !important;
+}
+
+/* Linkbox */
+.linkbox a {
+  color: #4FD1FF !important;
 }
